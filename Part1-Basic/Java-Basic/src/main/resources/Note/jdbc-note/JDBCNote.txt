@@ -1,0 +1,61 @@
+1.驱动管理器 --- 加载数据库驱动
+2.连接数据库
+3.SQL
+4.结果集
+
+Driver接口
+Class.forName();
+
+Connection接口
+DriverManager.getConnection()静态方法
+
+Statement接口
+执行静态sql,返回结果对象
+Statement
+^
+|
+PreparedStatement -- 防SQL注入
+^
+|
+CallableStatement --- prePareCall() -- 调用存储过程
+execute() boolean return hasResultSet
+executeQuery() select return ResultSet
+executeUpdate() insert/update/delete return int updateRow
+
+ResultSet接口
+结果集接口
+
+批处理
+Statement ---> addBatch() ---> executeBatch()
+
+事务:一组原子的Sql操作
+ACID
+原子性
+一致性
+隔离性
+持久性
+
+事务隔离级别
+读未提交
+读已提交
+可重复读
+序列化
+
+
+时间处理
+j.u.d
+Date
+j.s.*
+Date 年月日
+Time 时分秒
+TimeStamp 时间戳
+
+
+时间查询
+Date转换
+
+文本数据
+setClob
+
+图片
+setBlob

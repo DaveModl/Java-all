@@ -1,0 +1,18 @@
+@startuml
+card byte
+card short
+card char
+card int
+card long
+card float
+card double
+byte -> short
+short -> int
+char -> int
+int -> long
+int -> double
+float -> double
+int ..> float
+long ..> float
+long ..> double
+@enduml
